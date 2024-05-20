@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prot1</title>
+
+    <!-- Ejercicio 2: Hoja de estilo externa -->
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="miestilo.css">
+
+    <!-- Ejercicio 1: Uso de estilo interno -->
+    <style>
+        p {
+            color: chocolate;
+            /* no se aclara si debo comentarlo, por lo tanto, voy a requerir arreglos de color 
+            en los <p> siguientes */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Ejercicio 5: Uso de etiquetas semánticas de HTML agregar;
+    <header></header><nav></nav><section></section><footer></footer> -->
+
+    <header>
+        <!-- Ejercicio 6(d) Agregar un logo de la empresa -->
+        <img src="./imagen/logoHeader-green.png" alt="logo de la pagina" style="width: 300px; height: 150px;"> <!-- modifique las dimenciones internamente porque era grande -->
+
+        <!-- Segun la captura de ejm -->
+        <h1>Bienvenidos a Nuestra Pagina Principal</h1>
+    </header>
+
+    <nav>
+        <!-- Ejercicio 6 agregar (dar contenido):<nav></nav> -->
+        <ul>
+            <li><a href="https://www.google.com" target="_blank">Google</a></li>
+            <li><a href="https://www.yahoo.com" target="_blank">Yahoo</a></li>
+            <li><a href="https://talentosdigitales.ar/" target="_blank">Talentos Digitales</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <!-- Ejercicio 4: Uso de secciones (1) -->
+        <div class="contenedor">
+
+            <p class="centrado">
+                Somos una empresa que se dedica a la venta de relojes de mesa y pared con diseños únicos e innovadores.
+                Utilizamos materia prima de calidad. Elaboramos productos a la medida del cliente.
+            </p>
+            <p class="centrado_1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem veritatis ab ipsa eius
+                quibusdam alias, voluptatum cum nam voluptate rem. Soluta explicabo obcaecati, tempora eveniet
+                cupiditate optio ipsum temporibus aperiam?
+            </p>
+        </div>
+        <!-- Ejercicio 6(d) Agregar una imagen -->
+        <img src="./imagen/inmersion digital.jpg" alt="logo de la pagina" class="img_1">
+        <!-- modifique las dimenciones y color del borde, mediante una subclase -->
+
+    </section>
+
+    <footer class="footer">
+        <!-- modifico el color internamente porque sigue vigente el style (p{color:chocolate; }) -->
+        <p class="footer-content" style="color: white;"> &copy; 2024 Nuestra Empresa. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
